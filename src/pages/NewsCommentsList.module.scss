@@ -1,0 +1,12 @@
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  background: #ffffff;
+  h2 {
+    text-align: center;
+  }
+}

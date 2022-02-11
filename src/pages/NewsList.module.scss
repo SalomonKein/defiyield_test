@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  margin: auto;
+  width: 100vw;
+  padding: 10px;
+  .table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(255, 255, 255);
+    th,
+    td {
+      border: solid darkgray 1px;
+      padding: 10px;
+      word-wrap: break-word;
+      cursor: pointer;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: pre;
+    }
+  }
+  th {
+    background: rgb(33, 11, 94);
+    color: white;
+    &:hover {
+      background: rgb(86, 35, 168);
+    }
+  }
+  .buttonSort {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .date,
+  .domain {
+    display: none;
+  }
+  .buttonSort {
+    display: block !important;
+    width: 130px;
+    height: 50px;
+    background: rgb(32, 207, 219);
+    border: solid rgb(53, 66, 184) 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    top: 25px;
+    left: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    &:hover {
+      background: rgb(7, 100, 107);
+    }
+  }
+}
